@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,13 +11,23 @@
 
 <body>
     <div class="container p-5">
-        <div class="mb-3">
-            <label for="text-area" class="form-label">Scrivi qui il tuo testo</label>
-            <textarea class="form-control" id="text-area" rows="3"></textarea>
-        </div>
-        <div class="mb-3">
-            <label for="word" class="form-label">Inserisci la parola da censurare</label>
-            <input type="text" class="form-control" id="word" placeholder="...">
+        <div class="card">
+            <div class="card-body">
+                <form action="return.php">
+                    <div class="mb-3">
+                        <label for="text-area" class="form-label">Scrivi qui il tuo testo</label>
+                        <input type="text" class="form-control" id="text-area" placeholder="..." name="text"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="word" class="form-label">Inserisci la parola da censurare</label>
+                        <input type="text" class="form-control" id="word" placeholder="..." name="bad-word">
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn btn-primary mb-3">invia</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
