@@ -13,10 +13,10 @@
     <div class="container p-5">
         <div class="card">
             <div class="card-body">
-                <form action="return.php">
+                <form action="return.php" method="POST">
                     <div class="mb-3">
                         <label for="text-area" class="form-label">Scrivi qui il tuo testo</label>
-                        <input type="text" class="form-control" id="text-area" placeholder="..." name="text"></input>
+                        <textarea type="text" class="form-control" id="text-area" placeholder="..." name="text"></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="word" class="form-label">Inserisci la parola da censurare</label>

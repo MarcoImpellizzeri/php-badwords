@@ -1,6 +1,6 @@
 <?php
-$text = $_GET['text'];
-$badWord = $_GET['bad-word'];
+$text = $_POST['text'];
+$badWord = $_POST['bad-word'];
 
 // Sostituisci tutte le occorrenze della parola data da "bad-word" con "***"
 $testo_censurato = str_replace($badWord, "***", $text);
@@ -18,9 +18,9 @@ $testo_censurato = str_replace($badWord, "***", $text);
     <div class="container">
         <div class="m-5">
             <h3>Testo</h3>
-            <?php echo isset($_GET['text']) ? $_GET['text'] : ''; ?>
+            <?php echo isset($_POST['text']) ? $_POST['text'] : ''; ?>
             <!-- strLen() si usa per trovare la lunghezza dei caratteri del testo-->
-            <p>la lunghezza di questo testo e di <span class="fw-bold"><?php echo strlen($_GET['text']); ?></span> caratteri</p>
+            <p>la lunghezza di questo testo e di <span class="fw-bold"><?php echo strlen($_POST['text']); ?></span> caratteri</p>
         </div>
         <div class="m-5">
             <h3>Testo censurato</h3>
